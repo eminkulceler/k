@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menü - Kahve Dükkanı</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS bağlantısı -->
+    
+</head>
+
+<body>
+    <style>
+        body {
+            
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-image: url('images/pexels-fwstudio-33348-172296.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Sayfanın tamamını kapsar */
+    color: white; /* Metin rengini görünür yapmak için beyaz */
+
+            
+            font-family: "Georgia", serif;
+            background-color: #faf3e0;
+            color: #5d4037;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 3px;
+            color: #3e2723;
+        }
+
+        .w3-brown {
+            background-color: #6f4e37 !important;
+        }
+
+        .w3-light-brown {
+            background-color: #d7ccc8 !important;
+        }
+
+        .w3-menu-item {
+            color: #4e342e !important;
+        }
+
+        
+
+        body {
+            font-family: "Georgia", serif;
+            background-color: #faf3e0;
+            color: #5d4037;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 3px;
+            color: #3e2723;
+        }
+
+        .w3-brown {
+            background-color: #6f4e37 !important;
+        }
+
+        .w3-light-brown {
+            background-color: #d7ccc8 !important;
+        }
+
+        .w3-menu-item {
+            color: #4e342e !important;
+        }
+
+        .marquee {
+            background: #6f4e37;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .form-container {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+
+
+
+
+        
+    </style>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Kahve Dükkanı</a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <nav id="menuItems" class="menu">
+                <a href="index.html#about">Hakkımızda</a>
+                <a href="menu.html" class="">Menü</a>
+                <a href="subeler.html">Şubelerimiz</a>
+                <a href="iletisim.html" class="">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuItems');
+            menu.classList.toggle('active'); // Menüde "active" sınıfını ekle/kaldır
+        }
+    </script>
+
+
+    
+
+    <!-- Menü İçeriği -->
+    <main class="w3-container w3-padding-64">
+        <h1 class="w3-center">Menümüz</h1>
+        <p class="w3-center w3-text-grey">Kahve dünyasındaki eşsiz tatlarımızı keşfedin.</p>
+
+       
+
+
+<!-- İlk Sütun -->
+<div class="w3-col l6 w3-padding-large">
+    <div class="w3-card-4 w3-margin">
+        <h3 class="w3-menu-item">Latte</h3>
+        <p class="w3-text-grey">Yumuşak süt köpüğü ile harmanlanmış klasik kahve</p>
+        <p class="w3-text-grey">Fiyat: <b>125₺</b></p>
+        
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large"></div>
+    <div class="w3-card-4 w3-margin">
+        <h3 class="w3-menu-item">Espresso</h3>
+        <p class="w3-text-grey">Yoğun ve saf kahve aroması</p>
+        <p class="w3-text-grey">Fiyat: <b>120₺</b></p>
+        
+    </div>
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+    <div class="w3-card-4 w3-margin">
+        <h3 class="w3-menu-item">Filtre Kahve</h3>
+        <p class="w3-text-grey">Klasik bir başlangıç için ideal</p>
+        <p class="w3-text-grey">Fiyat: <b>115₺</b></p>
+        
+    </div>
+    </div>
+</div>
+
+
+
+            
+            <!-- İkinci Sütun -->
+            <div class="w3-col l6 w3-padding-large"></div>
+                <div class="w3-card-4 w3-margin">
+                    <h3 class="w3-menu-item">Cappuccino</h3>
+                    <p class="w3-text-grey">Bol köpüklü, eşsiz lezzet</p>
+                    <p class="w3-text-grey">Fiyat: <b>130₺</b></p>
+                 
+                </div>
+                <div class="w3-col l6 w3-padding-large"></div>
+                <div class="w3-card-4 w3-margin">
+                    <h3 class="w3-menu-item">Mocha</h3>
+                    <p class="w3-text-grey">Kahve ve çikolatanın mükemmel uyumu</p>
+                    <p class="w3-text-grey">Fiyat: <b>135₺</b></p>
+                    
+                </div>
+                </div>
+                <div class="w3-card-4 w3-margin">
+                    <img src="images/pexels-photo-17506083.webp" alt="Kahve Görseli" class="w3-image w3-round">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-brown w3-padding-32">
+        <p>&copy; 2024 Kahve Dükkanı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>
+
+<style>
+

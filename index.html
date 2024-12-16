@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <title>Kahve Dükkanı</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.html">
+    <link rel="stylesheet" href="iletisim.html">
+    <script src="script.js" defer></script>
+    
+    <style>
+        body {
+            
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-image: url('images/pexels-fwstudio-33348-172296.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Sayfanın tamamını kapsar */
+    color: white; /* Metin rengini görünür yapmak için beyaz */
+
+            
+            font-family: "Georgia", serif;
+            background-color: #faf3e0;
+            color: #5d4037;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 3px;
+            color: #3e2723;
+        }
+
+        .w3-brown {
+            background-color: #6f4e37 !important;
+        }
+
+        .w3-light-brown {
+            background-color: #d7ccc8 !important;
+        }
+
+        .w3-menu-item {
+            color: #4e342e !important;
+        }
+
+        
+
+        body {
+            font-family: "Georgia", serif;
+            background-color: #faf3e0;
+            color: #5d4037;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 3px;
+            color: #3e2723;
+        }
+
+        .w3-brown {
+            background-color: #6f4e37 !important;
+        }
+
+        .w3-light-brown {
+            background-color: #d7ccc8 !important;
+        }
+
+        .w3-menu-item {
+            color: #4e342e !important;
+        }
+
+        .marquee {
+            background: #6f4e37;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .form-container {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+
+
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    
+
+  
+     
+
+ <!-- Navbar -->
+ 
+
+
+ <header>
+    <div class="navbar">
+        <a href="index.html" class="logo">Kahve Dükkanı</a>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <nav id="menuItems" class="menu">
+            <a href="index.html#about">Hakkımızda</a>
+            <a href="menu.html" class="active">Menü</a>
+            <a href="subeler.html">Şubelerimiz</a>
+            <a href="iletisim.html">İletişim</a>
+        </nav>
+    </div>
+</header>
+
+
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+    <img class="w3-image" src="images/juni-shi-kUUacyTdChM-unsplash.jpg" alt="Kahve Dükkanı" width="1600" height="800">
+    <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+        <div class="marquee">
+            <span>% HAFTA İÇİ HER GÜN %20 İNDİRİM! %</span>
+        </div>
+        <h1 class="w3-xxlarge">Taze Kahve</h1>
+    </div>
+</header>
+
+
+
+    <!-- Menü İçeriği -->
+    <main class="w3-container w3-padding-64">
+        <h1 class="w3-center">KAHVE DÜKKANIMIZA HOŞ GELDİNİZ...</h1>
+        <p class="w3-center w3-text-grey">Kahve dünyasındaki eşsiz tatlarımızı keşfedin.</p>
+
+        <div class="w3-row">
+            <!-- İlk Sütun -->
+            <div class="w3-col l6 w3-padding-center">
+                <div class="w3-card-4 w3-margin">
+                    <h3 class="w3-menu-item">HAKKIMIZDA</h3>
+                    <p class="w3-center w3-text-grey">Taze kahve çekirdekleriyle hazırladığımız benzersiz içeceklerimizle, misafirlerimize yalnızca bir fincan kahve değil, unutulmaz bir deneyim sunmayı hedefliyoruz. 2023 yılından bu yana kahveye duyduğumuz tutkuyu eşsiz tarifler ve aromalarla birleştirerek, her bir yudumda kaliteyi hissettiriyoruz.
+
+                        Dükkânımız, sadece bir kahve durağı değil, aynı zamanda insanların rahatlayıp keyif alabileceği sıcak bir ortamdır. Misafirlerimizi özenle seçtiğimiz kahve çekirdekleriyle hazırlanmış latte, espresso, cappuccino ve daha pek çok lezzetle karşılıyoruz. Doğal yöntemlerle elde edilen kahve çekirdeklerimizi, her damlasında hissedilen taze aromasıyla harmanlıyor, müşteri memnuniyetini her zaman önceliğimiz olarak görüyoruz.
+                        
+                        Kahveye olan tutkumuz, yalnızca bir içecek sunmanın ötesine geçiyor. Samimi atmosferimizle dostane buluşmalara, kitap okuma saatlerine ve özel anlara eşlik etmeye devam ediyoruz. Bizim için kahve, bir içecekten çok daha fazlası; bir yaşam tarzı, bir tutku ve bir bağlantı aracıdır.
+                      </div> </p>
+
+                        
+                </div>
+                <div class="w3-card-4 w3-margin">
+                    <h3 class="w3-menu-item">LATTE ART USTALARI İLE ÇALIŞIYORUZ</h3>
+                    <p class="w3-center w3-text-grey">Taze kahve çekirdekleriyle hazırladığımız benzersiz içeceklerimizle, misafirlerimize yalnızca bir fincan kahve değil, unutulmaz bir deneyim sunmayı hedefliyoruz. 2023 yılından bu yana kahveye duyduğumuz tutkuyu eşsiz tarifler ve aromalarla birleştirerek, her bir yudumda kaliteyi hissettiriyoruz.
+
+                        Dükkânımız, sadece bir kahve durağı değil, aynı zamanda insanların rahatlayıp keyif alabileceği sıcak bir ortamdır. Misafirlerimizi özenle seçtiğimiz kahve çekirdekleriyle hazırlanmış latte, espresso, cappuccino ve daha pek çok lezzetle karşılıyoruz. Doğal yöntemlerle elde edilen kahve çekirdeklerimizi, her damlasında hissedilen taze aromasıyla harmanlıyor, müşteri memnuniyetini her zaman önceliğimiz olarak görüyoruz.
+                        
+                        Kahveye olan tutkumuz, yalnızca bir içecek sunmanın ötesine geçiyor. Samimi atmosferimizle dostane buluşmalara, kitap okuma saatlerine ve özel anlara eşlik etmeye devam ediyoruz. Bizim için kahve, bir içecekten çok daha fazlası; bir yaşam tarzı, bir tutku ve bir bağlantı aracıdır.
+                      </div> </p>
+                    
+
+            
+                <div class="w3-card-4 w3-margin">
+                    <img src="images/istockphoto-1148148346-640_adpp_is.mp4" alt="Kahve Görseli" class="w3-image w3-round">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-brown w3-padding-32">
+        <h1>KAHVE DÜKKANI</h1>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+
+    
+    <main class="w3-padding-64">
+        <h1 class="w3-center">Şubelerimiz</h1>
+        
+            <!-- Bodrum -->
+            <div class="w3-card-4 w3-margin">
+               
+                <div class="w3-container w3-light-grey">
+                    <h3>Bodrum</h3>
+                    <p>Adres: Beşiktaş Mah. Çevre Caddesi No:22</p>
+                    <p>Telefon: 0252 999 9999</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+            <!-- Kuşadası -->
+            <div class="w3-card-4 w3-margin">
+                
+                <div class="w3-container w3-light-grey">
+                    <h3>Kuşadası</h3>
+                    <p>Adres: Yeniağaç Mah. Papatya Caddesi No:6</p>
+                    <p>Telefon: 0256 999 9990</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+            <!-- Aydın -->
+            <div class="w3-card-4 w3-margin">
+                
+                <div class="w3-container w3-light-grey">
+                    <h3>Aydın</h3>
+                    <p>Adres: Mimar Sinan Mah. Turgut Özal Bulvarı No:16 - Efeler</p>
+                    <p>Telefon: 0256 999 9999</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+            <!-- İzmir -->
+            <div class="w3-card-4 w3-margin">
+
+                <div class="w3-container w3-light-grey">
+                    <h3>İzmir</h3>
+                    <p>Adres: Girne Atatürk Caddesi No:21 - Gaziemir Optimum AVM</p>
+                    <p>Telefon: 0232 999 9999</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="w3-center w3-brown w3-padding-32">
+        <p>Telif Hakkı © 2024 Kahve Dükkanı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>

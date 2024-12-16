@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şubelerimiz - Kahve Dükkanı</title>
+    <link rel="stylesheet" href="style.css"> <!-- CSS bağlantısı -->
+    <link rel="icon" type="image/png" href="logo.png"> <!-- Favicon -->
+</head>
+
+<body>
+
+    <style>
+        body {
+            
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-image: url('images/pexels-fwstudio-33348-172296.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Sayfanın tamamını kapsar */
+    color: white; /* Metin rengini görünür yapmak için beyaz */
+
+            
+            font-family: "Georgia", serif;
+            background-color: #faf3e0;
+            color: #5d4037;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 3px;
+            color: #3e2723;
+        }
+
+        .w3-brown {
+            background-color: #6f4e37 !important;
+        }
+
+        .w3-light-brown {
+            background-color: #d7ccc8 !important;
+        }
+
+        .w3-menu-item {
+            color: #4e342e !important;
+        }
+
+        
+
+        body {
+            font-family: "Georgia", serif;
+            background-color: #faf3e0;
+            color: #5d4037;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: "Playfair Display", serif;
+            letter-spacing: 3px;
+            color: #3e2723;
+        }
+
+        .w3-brown {
+            background-color: #6f4e37 !important;
+        }
+
+        .w3-light-brown {
+            background-color: #d7ccc8 !important;
+        }
+
+        .w3-menu-item {
+            color: #4e342e !important;
+        }
+
+        .marquee {
+            background: #6f4e37;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            font-weight: bold;
+            animation: scroll 15s linear infinite;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(100%);
+            }
+
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+
+        .form-container {
+            display: none;
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+    </style>
+
+
+
+
+        
+    </style>
+    <!-- Navbar -->
+    <header>
+        <div class="navbar">
+            <a href="index.html" class="logo">Kahve Dükkanı</a>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <nav id="menuItems" class="menu">
+                <a href="index.html#about">Hakkımızda</a>
+                <a href="menu.html" class="">Menü</a>
+                <a href="subeler.html">Şubelerimiz</a>
+                <a href="iletisim.html" class="">İletişim</a>
+            </nav>
+        </div>
+    </header>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menuItems');
+            menu.classList.toggle('active'); // Menüde "active" sınıfını ekle/kaldır
+        }
+    </script>
+
+
+
+    <!-- Şubeler İçeriği -->
+    <main class="w3-container w3-padding-64">
+        <h1 class="w3-center">Şubelerimiz</h1>
+        <p class="w3-center w3-text-grey">Türkiye genelindeki şubelerimizle hizmetinizdeyiz.</p>
+
+        <div class="w3-row">
+            <!-- Bodrum Şubesi -->
+            <div class="w3-card-4 w3-margin">
+                
+                <div class="w3-container w3-light-grey">
+                    <h3>Bodrum</h3>
+                    <p>Adres: Beşiktaş Mah. Çevre Caddesi No:22</p>
+                    <p>Telefon: 0252 999 9999</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+
+            <!-- Kuşadası Şubesi -->
+            <div class="w3-card-4 w3-margin">
+                
+                <div class="w3-container w3-light-grey">
+                    <h3>Kuşadası</h3>
+                    <p>Adres: Yeniağaç Mah. Papatya Caddesi No:6</p>
+                    <p>Telefon: 0256 999 9990</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+
+            <!-- Aydın Şubesi -->
+            <div class="w3-card-4 w3-margin">
+                
+                <div class="w3-container w3-light-grey">
+                    <h3>Aydın</h3>
+                    <p>Adres: Mimar Sinan Mah. Turgut Özal Bulvarı No:16 - Efeler</p>
+                    <p>Telefon: 0256 999 9999</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+
+            <!-- İzmir Şubesi -->
+            <div class="w3-card-4 w3-margin">
+                
+                <div class="w3-container w3-light-grey">
+                    <h3>İzmir</h3>
+                    <p>Adres: Girne Atatürk Caddesi No:21 - Gaziemir Optimum AVM</p>
+                    <p>Telefon: 0232 999 9999</p>
+                    <iframe src="https://www.google.com/maps/embed?..."></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-brown w3-padding-32">
+        <p>&copy; 2024 Kahve Dükkanı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+
+</html>

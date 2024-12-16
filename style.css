@@ -1,0 +1,472 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Navbar Temel Stil */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6f4e37;
+  padding: 10px 20px;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.navbar .menu {
+  display: flex;
+  gap: 15px;
+}
+
+.navbar .menu a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.navbar .menu a:hover {
+  background-color: #d7ccc8;
+  color: #6f4e37;
+}
+
+/* Hamburger Menü */
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+/* Mobil için Menü */
+@media (max-width: 768px) {
+  .menu {
+      display: none;
+      flex-direction: column;
+      background-color: #6f4e37;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu a {
+      margin: 5px 0;
+  }
+
+  .hamburger {
+      display: block;
+  }
+}
+
+
+  /* Marquee Kutusu */
+  .marquee {
+    width: 100%; /* Tüm genişliği kapsar */
+    overflow: hidden; /* Taşan içeriği gizler */
+    background-color: #faf3e0; /* Arka plan rengi */
+    color: #5d4037; /* Yazı rengi */
+    white-space: nowrap; /* Yazının satır kırmasını önler */
+    box-sizing: border-box; /* Kenarlıkları dahil eder */
+    font-size: 3.5em; /* Yazı boyutu */
+    
+    border-radius: 24px; /* Köşeleri yuvarlat */
+  }
+  
+  /* Animasyonlu Yazı */
+  .marquee span {
+    display: inline-block;
+    padding-left: 100%; /* Başlangıç pozisyonu */
+    animation: marquee-animation 20s linear infinite; /* Animasyon */
+  }
+  
+  /* @keyframes ile Animasyon Tanımı */
+  @keyframes marquee-animation {
+    from {
+      transform: translateX(0); /* Yazı başlangıç pozisyonu */
+    }
+    to {
+      transform: translateX(-100%); /* Yazı bitiş pozisyonu */
+    }
+  }
+  
+  
+  /* Genel Stil */
+  
+  body {
+   
+  
+    font-family: "Georgia", serif;
+    background-color: #faf3e0; /* Kahve kreması tonu */
+    color: #5d4037; /* Kahverengi metin */
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+    letter-spacing: 3px;
+    color: #3e2723; /* Koyu kahve tonu */
+  }
+  
+
+
+
+.hamburger .line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+/* Menü */
+.menu {
+  display: flex;
+  gap: 15px;
+}
+
+.menu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 15px;
+  transition: background-color 0.3s ease;
+}
+
+.menu a:hover {
+  background-color: #4e342e; /* Daha koyu kahve tonu */
+  border-radius: 5px;
+}
+
+/* Mobil için Ayarlar */
+@media (max-width: 768px) {
+  /* Hamburger menüyü göster */
+  .hamburger {
+      display: flex;
+  }
+
+  /* Menü varsayılan olarak gizli */
+  .menu {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #6f4e37; /* Kahverengi */
+      width: 200px;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu.active {
+      display: flex; /* Menü açıldığında görünür */
+  }
+
+  .menu ul {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .menu a {
+      width: 100%; /* Menü elemanlarını tam genişlikte yap */
+      padding: 10px 20px;
+  }
+}
+
+
+/* İçerik */
+.content {
+  position: relative;
+  z-index: 1; /* İçeriği videonun üstüne yerleştir */
+  text-align: center;
+  color: white;
+  font-family: "Georgia", serif;
+  padding: 20px;
+}
+
+.content h1 {
+  font-size: 3rem;
+  margin: 0 0 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Metin gölgesi */
+}
+
+.content p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.content .btn {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #6f4e37;
+  color: white;
+  font-size: 1.2rem;
+  border-radius: 24px;
+  transition: background-color 0.3s ease;
+}
+
+.content .btn:hover {
+  background-color: #4e342e;
+}
+
+
+
+/* Marquee Kutusu */
+.marquee {
+  width: 100%; /* Tüm genişliği kapsar */
+  overflow: hidden; /* Taşan içeriği gizler */
+  background-color: #faf3e0; /* Arka plan rengi */
+  color: #5d4037; /* Yazı rengi */
+  white-space: nowrap; /* Yazının satır kırmasını önler */
+  box-sizing: border-box; /* Kenarlıkları dahil eder */
+  font-size: 3.5em; /* Yazı boyutu */
+  
+  border-radius: 24px; /* Köşeleri yuvarlat */
+}
+
+/* Animasyonlu Yazı */
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; /* Başlangıç pozisyonu */
+  animation: marquee-animation 20s linear infinite; /* Animasyon */
+}
+
+/* @keyframes ile Animasyon Tanımı */
+@keyframes marquee-animation {
+  from {
+    transform: translateX(0); /* Yazı başlangıç pozisyonu */
+  }
+  to {
+    transform: translateX(-100%); /* Yazı bitiş pozisyonu */
+  }
+}
+
+
+
+
+/* Genel Ayarlar */
+body {
+  font-family: "Georgia", serif;
+  margin: 0;
+  padding: 0;
+  background-color: #faf3e0; /* Kahve kreması tonu */
+  color: #5d4037; /* Kahverengi metin */
+  overflow-x: hidden; /* Yatay kaydırmayı engeller */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display", serif;
+  letter-spacing: 3px;
+  color: #3e2723; /* Koyu kahve tonu */
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  color: #8e5042; /* Daha açık kahve tonu */
+}
+
+/* Navbar */
+.navbar {
+  background-color: #6f4e37; /* Kahve rengi */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar .w3-bar-item {
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 10px 15px;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar .w3-bar-item:hover {
+  background-color: #4e342e; /* Daha koyu kahve tonu */
+  border-radius: 24px;
+  transform: scale(1.1); /* Hafif büyüme efekti */
+}
+
+/* Header */
+header {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+header img {
+  width: 100%;
+  height: auto;
+}
+
+header h1 {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 24px;
+}
+
+/* Ana Bölüm */
+.w3-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.w3-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.w3-col {
+  flex: 1 1 45%; /* İki sütun tasarımı */
+  margin: 10px;
+}
+
+.w3-col img {
+  max-width: 100%;
+  border-radius: 24px;
+}
+
+/* Şubeler */
+.w3-card-4 {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  margin: 20px 0;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.w3-card-4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.w3-card-4 img {
+  width: 100%;
+  height: auto;
+}
+
+.w3-card-4 .w3-container {
+  padding: 15px;
+}
+
+.w3-card-4 iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 16px;
+}
+
+/* Menü Bölümü */
+.w3-menu-item {
+  color: #4e342e;
+  font-size: 1.2em;
+}
+
+.w3-menu-item:hover {
+  text-decoration: underline;
+}
+
+/* Formlar */
+form input, form textarea {
+  width: 100%;
+  padding: 16px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 24px;
+  font-size: 16px;
+}
+
+form button {
+  background-color: #6f4e37;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #4e342e;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Video Bölümü */
+.video-container {
+  text-align: center;
+  margin: 20px auto;
+}
+
+video {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #6f4e37;
+  border-radius: 24px;
+}
+
+/* Footer */
+footer {
+  background-color: #6f4e37;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+  .w3-row {
+    flex-direction: column;
+  }
+
+  .w3-col {
+    flex: 1 1 100%; /* Tek sütun */
+    margin: 10px 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .w3-bar-item {
+    width: 100%;
+    text-align: center;
+  }
+}
